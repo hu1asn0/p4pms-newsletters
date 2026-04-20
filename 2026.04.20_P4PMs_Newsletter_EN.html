@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 640px; margin: 0 auto; padding: 20px; background: #ffffff; }
+  h1 { font-size: 24px; border-bottom: 2px solid #e5e5e5; padding-bottom: 8px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  h3 { font-size: 17px; margin-top: 24px; }
+  h4 { font-size: 15px; color: #444; }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+  th { background: #f5f5f5; font-weight: 600; }
+  pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; overflow-x: auto; font-size: 14px; }
+  code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 14px; }
+  p code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; }
+  blockquote { border-left: 4px solid #dfe2e5; margin: 16px 0; padding: 8px 16px; color: #555; }
+  a { color: #0366d6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+  ul, ol { padding-left: 24px; }
+  li { margin-bottom: 4px; }
+</style>
+
+</head>
+<body>
+<h1>P4PMS Newsletter — 2026.04.20</h1>
+<hr />
+<h2>📧 A/B TEST HEADLINES</h2>
+<h3>Headline A (Emotional, outcome-driven)</h3>
+<h4>"Your Methodology Was Chosen Implicitly at Month 2 — Here's How to Choose It Deliberately Before Kickoff"</h4>
+<h3>Headline B (Practical, problem-solving)</h3>
+<h4>"AI-Assisted Methodology Selection: A PM's Decision Framework for Agile vs. Waterfall — With a Defensible Rationale Before the First Sprint or Gantt Chart"</h4>
+<hr />
+<h2>🎯 INTRODUCTION</h2>
+<p>Dear Project Management Colleagues,</p>
+<p>Here is a scenario that plays out more often than PMs admit: the project kicked off in January with a Waterfall plan — phased delivery, signed specifications, milestone gates. By March, requirements have changed twice, the steering committee wants demo-able progress every two weeks, and the development team is running unofficial sprints while the PM tries to maintain a Gantt chart that no longer reflects reality. Or the reverse — an Agile sprint model was chosen because "we're doing software," but the client is a regulated public sector organization with a fixed budget, a legal team that needs a signed specification document before any development begins, and a procurement department that has never attended a sprint review.</p>
+<p>The methodology decision is the foundation of every project management decision that follows: how you structure governance, how you plan deliverables, how you set stakeholder expectations, how you manage scope, how you report to the steering committee. Get it wrong and you spend the rest of the project fighting the structure instead of managing the work.</p>
+<p>The problem is not that PMs don't know the difference between Agile and Waterfall. The problem is that the decision is made implicitly — based on habit, stakeholder pressure, or whatever the PM used on their last project — rather than through a structured analysis of the specific project's characteristics. AI changes this: a 30-minute pre-kickoff analysis can surface the right methodology recommendation, with a defensible rationale, before the project structure is locked in. In this issue: the five-step AI-assisted methodology decision framework, and the cookbook prompts to run it.</p>
+<hr />
+<h2>📊 CONTEXT — WHY THIS MATTERS NOW</h2>
+<p>The "Agile vs. Waterfall" conversation has been replaced by a more nuanced reality — and the data shows it:</p>
+<ul>
+<li><strong>Hybrid methodology adoption has increased 57%</strong> while purely predictive (Waterfall) approaches declined 24% over the past three years (PMI Pulse of the Profession 2025) — the binary framing is increasingly obsolete</li>
+<li><strong>67% of large enterprises</strong> now run blended frameworks rather than committing to a single methodology — yet most PMs still make the methodology call as a binary decision at kickoff</li>
+<li><strong>76% of project professionals</strong> expect an increase in agile or hybrid approaches over the next five years — but PMI's own data confirms that teams perform equally well using predictive, hybrid, and agile approaches; success depends on fit, not on picking the "modern" option</li>
+<li>A <strong>2025 data-driven study</strong> (ScienceDirect) found that Agile projects show significantly lower cost deviation than Waterfall — but only when project characteristics match the methodology; mismatched Agile implementations show no better cost performance than mismatched Waterfall</li>
+<li>The key insight from the research: <strong>the methodology decision is a project risk</strong>, not an administrative checkbox. PMs who make the call explicitly — based on documented project characteristics — consistently outperform those who inherit a methodology from organizational habit or sponsor preference</li>
+</ul>
+<p><strong>Manual vs. AI-assisted methodology decision:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Manual</th>
+<th>With AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements stability assessment</td>
+<td>30–60 min stakeholder interviews, often post-kickoff</td>
+<td>15 min: AI analyzes project brief and flags volatility indicators</td>
+</tr>
+<tr>
+<td>Regulatory/compliance check</td>
+<td>PM relies on memory of past projects or asks legal</td>
+<td>10 min: AI identifies regulatory constraints from project context</td>
+</tr>
+<tr>
+<td>Stakeholder expectation mapping</td>
+<td>Deferred to kickoff meeting — PM adapts after</td>
+<td>20 min: AI maps stakeholder communication needs to methodology requirements</td>
+</tr>
+<tr>
+<td>Hybrid model design</td>
+<td>Not done — PM picks one methodology and adapts ad hoc</td>
+<td>20 min: AI recommends where to apply Agile and where to apply Waterfall</td>
+</tr>
+<tr>
+<td>Methodology rationale document</td>
+<td>Never written — the decision was implicit</td>
+<td>15 min: AI generates a 1-page rationale the PM can share with the sponsor</td>
+</tr>
+<tr>
+<td><strong>Total PM time</strong></td>
+<td><strong>Decision made implicitly, at zero cost — until Month 2</strong></td>
+<td><strong>80 min, front-loaded before kickoff, with a defensible record</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🔍 PRACTICAL EXAMPLE: STEP BY STEP</h2>
+<h3>The Scenario: ERP Integration + Custom Citizen Portal, €320K, 9-Month Delivery, Public Sector Client</h3>
+<p><strong>Situation:</strong> A PM is starting a digital services project for a mid-size municipality. The project has two main components: (1) integrating an off-the-shelf ERP system — fixed vendor, fixed implementation methodology, four formal phase gates; and (2) building a citizen-facing web portal on top of it — custom development, requirements gathered from four departments, with a product owner who is available weekly. Budget is fixed by contract. The client's legal team must formally approve every requirements document before development begins. The client sponsor attended an "Agile transformation" conference last year and keeps mentioning sprints.</p>
+<p><strong>The challenge:</strong>
+- The ERP component has fixed vendor phases and governance that cannot run Agile
+- The portal component has volatile requirements and would benefit from iterative delivery
+- The sponsor wants "Agile" but the legal approval process is incompatible with sprint-based development
+- The PM needs a defensible methodology recommendation before the kickoff meeting — not a post-hoc explanation at Month 3</p>
+<hr />
+<h3>Step 1: Map the project's characteristics against methodology drivers</h3>
+<p>Before choosing a methodology, you need a structured view of the project's attributes — not your intuition. AI turns the project brief into a scored characteristics map in 15 minutes.</p>
+<div class="code"><pre><span></span><code>You are a project management methodology advisor analyzing a project to determine
+the most appropriate delivery approach.
+
+Project context:
+- Project name and type: [e.g., &quot;ERP integration + citizen portal, municipal client&quot;]
+- Industry/sector: [regulated / public sector / financial / commercial — describe]
+- Project duration: [months]
+- Budget type: [fixed-price contract / time-and-materials / internal budget]
+- Client type: [external client / internal sponsor / regulated stakeholder]
+- Number of distinct workstreams: [e.g., &quot;2 — vendor ERP implementation + custom portal&quot;]
+
+For each dimension below, rate the project 1–5 (1 = strongly Waterfall indicator,
+5 = strongly Agile indicator) and explain your rating based on the project context:
+
+1. Requirements stability: How likely are requirements to change during delivery?
+   (1 = fully defined and locked / 5 = highly volatile, significant changes expected)
+2. Delivery speed: Does the client need working deliverables continuously, or are
+   formal phase completions acceptable?
+   (1 = milestones and phase gates / 5 = continuous delivery expected)
+3. Regulatory/compliance burden: How much formal documentation does the project require?
+   (1 = extensive audit trail, sign-off at each phase / 5 = no regulatory constraints)
+4. Stakeholder involvement: How frequently can stakeholders give feedback?
+   (1 = steering committee only, monthly / 5 = product owner available daily)
+5. Team structure: Is the team co-located and cross-functional, or distributed specialists?
+   (1 = distributed functional teams / 5 = co-located cross-functional team)
+6. Technical certainty: How well-defined is the technical architecture?
+   (1 = fully specified / 5 = exploratory, architecture will evolve)
+
+Output: a scored characteristic map in table format, with a weighted methodology
+recommendation and a 2-sentence rationale. Flag any characteristics that point
+strongly in opposite directions — these indicate a hybrid model is likely needed.
+</code></pre></div>
+
+<p><strong>What you get:</strong> A scored characteristics map that replaces gut feeling with a structured, discussable analysis — ready to present to the sponsor as the rationale for your methodology recommendation.</p>
+<hr />
+<h3>Step 2: Identify regulatory and compliance constraints</h3>
+<p>Regulatory constraints are the strongest Waterfall indicators. A single compliance requirement — formal sign-off, audit trail, fixed specification — can override an otherwise Agile-friendly project profile. AI identifies these constraints from the project context before they surface as surprises at Month 3.</p>
+<div class="code"><pre><span></span><code>You are a compliance and project governance advisor reviewing a project for
+regulatory constraints that affect methodology selection.
+
+Project context:
+- Industry/sector: [describe]
+- Client type: [public sector / regulated industry / commercial]
+- Contract type: [fixed-price / T&amp;M / internal]
+- Known regulatory frameworks that apply: [list if known, or &quot;unknown — please infer&quot;]
+- Key documentation requirements you&#39;re aware of: [list or &quot;unclear&quot;]
+
+Analyze the project for compliance and governance constraints:
+1. Required documentation: what formal documents (specification, test reports, sign-off
+   records) are likely required by the client, contract, or regulation?
+2. Approval gates: are there mandatory approval points where progress must stop until
+   sign-off is received? Who gives this approval and what is the typical lead time?
+3. Audit trail requirements: does this project need to maintain a traceable record of
+   decisions, changes, and approvals? (Affects whether informal sprint delivery is viable)
+4. Fixed vs. flexible scope indicators: based on the contract and client type, flag any
+   clauses or expectations that imply a fixed scope — even if the sponsor says &quot;Agile&quot;
+5. Methodology recommendation from compliance perspective: what methodology structure
+   does the compliance environment support? Rate: Waterfall / Hybrid (lean governance)
+   / Hybrid (agile delivery + fixed phases) / Full Agile
+
+Output: a compliance constraint summary the PM can use as input to the methodology
+decision and share with the project sponsor before kickoff.
+</code></pre></div>
+
+<hr />
+<h3>Step 3: Map stakeholder communication needs to methodology requirements</h3>
+<p>The methodology affects how you communicate with every stakeholder. A sponsor who wants weekly demos is incompatible with a Waterfall milestone structure. A procurement department that needs a fixed specification document is incompatible with sprint-based discovery. AI maps the mismatch before it becomes conflict at Month 2.</p>
+<div class="code"><pre><span></span><code>You are a stakeholder communication advisor mapping stakeholder needs to
+methodology requirements for a project manager.
+
+Project stakeholders (describe each briefly):
+- Project sponsor: [role, communication preference, what &quot;progress&quot; means to them]
+- Client/end-user representative: [role, involvement level, what they need to see]
+- Technical/delivery team: [internal or vendor, methodology experience]
+- Legal/procurement: [what formal deliverables they require and when]
+- Steering committee: [frequency and format of reporting expected]
+
+Preliminary methodology direction (from Step 1): [Waterfall / Agile / Hybrid — likely]
+
+For each stakeholder, identify:
+1. Communication need: what do they need to see, and how often?
+2. Methodology compatibility: is this need compatible with the preliminary methodology?
+   (Compatible / Tension / Incompatible — with 1-sentence explanation)
+3. Adaptation required: if there is a tension or incompatibility, what structure can
+   satisfy both the stakeholder need and the methodology? (e.g., &quot;sprint reviews
+   formatted as phase milestone reports for the steering committee&quot;)
+
+Output: a stakeholder-methodology compatibility table, and a list of adaptations
+the PM should build into the project governance structure before kickoff.
+</code></pre></div>
+
+<p><strong>What you get:</strong> A clear map of where your methodology choice will create stakeholder friction — and specific adaptations to neutralize it before the kickoff meeting.</p>
+<hr />
+<h3>Step 4: Design the hybrid model — where to draw the line</h3>
+<p>For projects that need elements of both — the ERP component runs Waterfall, the portal component runs Agile — AI helps define the governance structure at the boundary. Where does the planning horizon switch? How do you manage dependencies between a phased Waterfall component and an iterative Agile component running in parallel?</p>
+<div class="code"><pre><span></span><code>You are a project governance architect designing a hybrid delivery framework for a
+project with both Waterfall and Agile components.
+
+Project structure:
+- Component A (Waterfall): [description — what is being delivered, why Waterfall applies,
+  key phases and governance requirements]
+- Component B (Agile): [description — what is being delivered, why Agile applies,
+  sprint cadence, product owner availability]
+- Key dependencies between A and B: [what does Component B depend on from A, and when?]
+- Shared governance: [what reporting, budget tracking, and steering committee structure
+  applies to the overall project?]
+
+Design a hybrid governance model:
+1. Component governance: what structure (phases, gates, ceremonies) applies to each
+   component independently?
+2. Integration points: where and how do the two components synchronize? What are the
+   triggers? What is the handoff format?
+3. Dependency management: how does a delay in the Waterfall phase affect the sprint
+   plan for the Agile component? What is the buffer and escalation process?
+4. Unified reporting: how does the PM report on a hybrid project to a steering committee
+   that expects a single RAG status? Design a hybrid status format that serves both the
+   Waterfall phase gates and the Agile sprint cadence.
+5. Risk at the boundary: what are the top 3 risks of running these components in
+   parallel? For each: early warning signal + mitigation.
+
+Output: a one-page hybrid governance design, ready to present at kickoff.
+</code></pre></div>
+
+<hr />
+<h3>Step 5: Write the methodology rationale document</h3>
+<p>The methodology decision is a project risk. Document it. A one-page rationale — written before kickoff — protects the PM when the sponsor asks at Month 4 why the project isn't running "full Agile," and gives the team a shared reference for governance decisions throughout delivery.</p>
+<div class="code"><pre><span></span><code>You are a project management advisor writing a methodology rationale document
+for a project manager to present to the project sponsor before kickoff.
+
+Input (use outputs from Steps 1–4):
+- Project characteristics score: [paste Step 1 output]
+- Compliance constraints summary: [paste Step 2 output]
+- Stakeholder compatibility analysis: [paste Step 3 output]
+- Hybrid model design (if applicable): [paste Step 4 output]
+
+Write a methodology rationale document (max 1 page):
+1. Recommended methodology: [Waterfall / Agile / Hybrid — specify the model]
+2. Rationale: why this methodology is the right fit for this specific project —
+   reference the characteristics analysis, compliance requirements, and stakeholder needs
+3. What this means in practice: how will the project be structured? What ceremonies,
+   governance gates, and reporting cadences will apply?
+4. What this is not: explicitly state what was considered and rejected, and why —
+   this prevents the &quot;but I thought we were doing Agile&quot; conversation at Month 2
+5. Decision owner and revision trigger: who is accountable for this choice, and under
+   what conditions (scope change, regulatory change, team change) should it be revisited?
+
+Tone: professional, concise. This is an executive document — no methodology theory,
+just the decision and the rationale. The sponsor should be able to read it in 3 minutes.
+</code></pre></div>
+
+<p><strong>Result:</strong> The PM walks into kickoff with a documented, defensible methodology decision — and a sponsor who has signed off on the structure before the first sprint starts or the first Gantt chart is published.</p>
+<hr />
+<h2>📚 COOKBOOK: AI-Assisted Methodology Selection for Project Managers</h2>
+<h3>Recipe #1: The 10-Minute Methodology Quick-Check</h3>
+<p><strong>What's the problem:</strong> You are 2 days from kickoff and realize the methodology was never formally decided. You need a fast assessment, not a 4-hour workshop.</p>
+<p><strong>Prompt:</strong></p>
+<div class="code"><pre><span></span><code>You are a project management advisor. I need a rapid methodology recommendation
+for a project starting in 2 days.
+
+Project overview (answer what you know — it is fine if some is missing):
+- What is being built or delivered: [description]
+- Who is the client: [internal / external / regulated industry]
+- How long is the project: [duration]
+- Is the budget fixed or flexible: [fixed-price / T&amp;M / internal budget]
+- How stable are the requirements: [locked / likely to change / unknown]
+- What is the team&#39;s experience with Agile vs. Waterfall: [describe]
+
+Based on this, give me:
+1. A methodology recommendation (Waterfall / Agile / Hybrid) with 3 bullet points
+   of rationale
+2. The top 3 risks of using this methodology for this project
+3. The one thing I should clarify with the sponsor before kickoff to validate this choice
+
+Keep the output under half a page.
+</code></pre></div>
+
+<p><strong>How fast it works:</strong> 10 minutes → a defensible first-pass recommendation
+<strong>Result:</strong> You walk into kickoff with a methodology stance, not a blank slate — and a list of the three questions that will sharpen it.</p>
+<hr />
+<h3>Recipe #2: Converting "We Want Agile" Into a Workable Plan</h3>
+<p><strong>What's the problem:</strong> The sponsor says "Agile" but the project has a fixed contract, a regulatory approval process, and a team that has never run a sprint. You need to redirect the conversation without creating conflict at kickoff.</p>
+<p><strong>Prompt:</strong></p>
+<div class="code"><pre><span></span><code>You are a project governance advisor helping a PM navigate a methodology mismatch
+between a sponsor&#39;s preference and project reality.
+
+Sponsor&#39;s stated preference: Agile (sprint-based delivery, regular demos)
+Project constraints:
+- Contract type: [fixed-price / deliverable-based]
+- Regulatory or approval requirements: [describe]
+- Team&#39;s Agile experience: [low / none / mixed]
+- Key reasons full Agile is not viable: [list 2–3 specific constraints]
+
+Design an &quot;Agile-informed&quot; hybrid model that:
+1. Gives the sponsor the visible progress and frequent feedback they want from Agile
+2. Satisfies the contractual, regulatory, and team constraints
+3. Uses Agile language where it fits (sprints, demos, retrospectives) and Waterfall
+   structure where it must (phases, sign-offs, fixed deliverables)
+4. Includes a one-paragraph explanation I can give the sponsor in plain language —
+   without using the word &quot;Waterfall&quot;
+
+Output: a hybrid governance summary + sponsor communication paragraph.
+</code></pre></div>
+
+<p><strong>How fast it works:</strong> 15 minutes
+<strong>Result:</strong> A governance structure that satisfies the sponsor's intent without creating a compliance or delivery problem — and a pre-drafted sponsor message that avoids the methodology argument entirely.</p>
+<hr />
+<h3>Recipe #3: Methodology Health Check at Month 2</h3>
+<p><strong>What's the problem:</strong> You are 2 months in and the methodology is not working. Requirements are changing in a Waterfall project, or the sprint rhythm is collapsing in an Agile one. You need an honest assessment before it becomes a crisis.</p>
+<p><strong>Prompt:</strong></p>
+<div class="code"><pre><span></span><code>You are a project management advisor conducting a methodology health check.
+
+Current methodology: [Waterfall / Agile / Hybrid]
+Project status: [2 months in / what percentage complete]
+
+Symptoms you are seeing (describe informally):
+[e.g., &quot;requirements keep changing but we&#39;re locked into a signed specification
+from 6 weeks ago&quot;, &quot;stakeholders are not attending sprint reviews so we&#39;re building
+without feedback&quot;, &quot;the team is running informal sprints but reporting in Waterfall
+format and both are wrong&quot;]
+
+Analyze:
+1. Is this a methodology fit problem, an execution problem, or both?
+2. If it is a fit problem: what specific project characteristics were misjudged at
+   kickoff, or have since changed, that now point to a different approach?
+3. What is the cost of switching methodology now vs. continuing with the current
+   structure? (Be specific: what would need to be re-planned, re-communicated,
+   re-contracted?)
+4. What is the minimum viable adjustment — the smallest change that would relieve
+   the most pressure without requiring a full re-plan?
+5. How should the PM communicate this adjustment to the sponsor? Draft a 3-sentence
+   sponsor message.
+
+Output: a concise assessment and recommended action, ready to present to the sponsor.
+</code></pre></div>
+
+<p><strong>How fast it works:</strong> 20 minutes
+<strong>Result:</strong> A structured basis for a methodology correction conversation — before the problem becomes a steering committee agenda item.</p>
+<hr />
+<h3>Recipe #4: Methodology Framework for AI-Heavy Projects</h3>
+<p><strong>What's the problem:</strong> The project includes significant AI or ML components — model development, data pipelines, LLM integration. Traditional Agile or Waterfall frameworks do not map cleanly to the experimental nature of AI development, and the PM needs a governance structure that is honest about the uncertainty.</p>
+<p><strong>Prompt:</strong></p>
+<div class="code"><pre><span></span><code>You are a project management advisor specializing in AI and data science projects.
+
+Project context:
+- AI/ML components in scope: [describe — e.g., &quot;LLM integration for customer service
+  chatbot&quot;, &quot;predictive model for churn scoring&quot;, &quot;RAG pipeline for document search&quot;]
+- Non-AI components: [describe any traditional software or infrastructure components]
+- Client expectations for the AI components: [e.g., &quot;fixed accuracy target&quot;,
+  &quot;iterative improvement acceptable&quot;, &quot;production deployment with SLA&quot;]
+- Team composition: [data scientists, ML engineers, product engineers — describe mix]
+
+Design a methodology framework for this AI project:
+1. AI development component: why traditional sprint planning does not directly apply
+   to model development — and what modified governance structure fits instead
+   (experiments as units of work, model performance gates, etc.)
+2. Non-AI component: what standard methodology applies, and why
+3. Integration governance: how the experimental AI component synchronizes with
+   the delivery timeline of the non-AI component — especially at integration points
+4. Stakeholder communication: how do you explain &quot;the model is not good enough yet&quot;
+   in a governance structure that expects sprint deliverables?
+5. Go/no-go criteria for AI components: what performance thresholds or confidence
+   levels should trigger a scope or timeline conversation with the sponsor?
+
+Output: a hybrid AI project governance model, in plain language, for a PM with
+general technical awareness but not an ML background.
+</code></pre></div>
+
+<p><strong>How fast it works:</strong> 20–25 minutes
+<strong>Result:</strong> A governance framework that treats AI development honestly — as experimental work with uncertainty — rather than forcing it into a sprint structure that implies a predictability it does not have.</p>
+<hr />
+<h2>💡 KEY TAKEAWAYS</h2>
+<ul>
+<li><strong>The methodology decision is a project risk, not an administrative choice.</strong> PMs who make it explicitly — before kickoff, based on documented project characteristics — consistently avoid the Month 2–3 "we are fighting the methodology" problem that is extremely expensive to correct after the fact.</li>
+<li><strong>67% of enterprises use hybrid frameworks.</strong> The right question is rarely "Agile or Waterfall?" It is "where in this project does each approach apply, and how do we govern the boundary between them?"</li>
+<li><strong>Regulatory constraints override everything.</strong> A single compliance requirement — mandatory sign-off, audit trail, fixed specification — can make a project Waterfall-by-default regardless of what the sponsor calls it. Identify these in Step 2, before kickoff, not at Month 3.</li>
+<li><strong>"We want Agile" often means "we want visibility and control."</strong> The sponsor's Agile preference is usually about frequent progress visibility and early feedback, not sprint ceremonies. Recipe #2 shows how to deliver the intent without the incompatibility.</li>
+<li><strong>Document the methodology decision.</strong> A one-page rationale — written before kickoff — is the PM's protection when the methodology is questioned at Month 4. Without it, the decision was never made; it simply happened.</li>
+<li><strong>AI-heavy projects need a modified framework.</strong> ML model development is fundamentally experimental. Forcing it into standard sprint planning creates false predictability that will surface as a credibility problem when the model misses its accuracy target. Recipe #4 gives you the language and structure to manage this honestly with the sponsor.</li>
+</ul>
+<hr />
+<h2>☕ SUPPORT P4PMS</h2>
+<p>If this framework saved you from a methodology mismatch — or helped you have a difficult conversation with a sponsor before it became a Month 4 crisis — consider supporting the work:</p>
+<p>👉 <strong><a href="https://buymeacoffee.com/p4pms">buymeacoffee.com/p4pms</a></strong></p>
+<hr />
+<h2>👋 NEXT ISSUE PREVIEW</h2>
+<p>Next week: <strong>Scope Management and Change Requests</strong> — How to use AI to detect scope creep early, evaluate change requests in 15 minutes, and communicate scope impacts to stakeholders before they become budget surprises.</p>
+<hr />
+<p>Best regards, — The P4PMs Team</p>
+</body>
+</html>
